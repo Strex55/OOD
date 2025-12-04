@@ -3,9 +3,10 @@
 
 #include "ShapeAdapter.h"
 
-namespace geom {
-
-class CircleAdapter : public ShapeAdapter {
+namespace geom 
+{
+class CircleAdapter : public ShapeAdapter 
+{
 public:
   CircleAdapter(const Point& center, int radius);
   ~CircleAdapter() override = default;

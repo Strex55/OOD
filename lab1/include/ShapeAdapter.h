@@ -5,9 +5,10 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-namespace geom {
-
-class ShapeAdapter : public IGeometry {
+namespace geom 
+{
+class ShapeAdapter : public IGeometry 
+{
 public:
   ~ShapeAdapter() override = default;
 

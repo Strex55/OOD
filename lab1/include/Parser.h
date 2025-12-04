@@ -6,21 +6,22 @@
 #include <vector>
 #include <string>
 
-namespace geom {
+namespace geom
+{
+	class Parser
+	{
+	public:
+		Parser() = default;
+		std::vector<std::unique_ptr<IGeometry>> parseFile(const std::string& path) const;
+		static void writeResults(const std::string& path, const std::vector<std::unique_ptr<IGeometry>>& shapes);
 
-class Parser {
-public:
-  Parser() = default;
-  std::vector<std::unique_ptr<IGeometry>> parseFile(const std::string& path) const;
-  static void writeResults(const std::string& path, const std::vector<std::unique_ptr<IGeometry>>& shapes);
+	private:
+		static std::unique_ptr<IGeometry> parseLine(const std::string& line);
+		static bool readPoint(const std::string& src, const std::string& key, Point& out);
+		static bool readInt(const std::string& src, const std::string& key, int& out);
+		static std::string normalize(const std::string& s);
+	};
 
-private:
-  static std::unique_ptr<IGeometry> parseLine(const std::string& line);
-  static bool readPoint(const std::string& src, const std::string& key, Point& out);
-  static bool readInt(const std::string& src, const std::string& key, int& out);
-  static std::string normalize(const std::string& s);
-};
+}
 
-}  
-
-#endif  
+#endif

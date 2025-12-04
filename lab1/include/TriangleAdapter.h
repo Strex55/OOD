@@ -3,9 +3,10 @@
 
 #include "ShapeAdapter.h"
 
-namespace geom {
-
-class TriangleAdapter : public ShapeAdapter {
+namespace geom 
+{
+class TriangleAdapter : public ShapeAdapter 
+{
 public:
   TriangleAdapter(const Point& p1, const Point& p2, const Point& p3);
   ~TriangleAdapter() override = default;
