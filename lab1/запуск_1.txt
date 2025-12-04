@@ -1,0 +1,7 @@
+Конфигурация/сборка:
+     - D:
+     - cd D:\Nikita\3_COURSE\OOD\lab1
+     - cmake -S "D:\Nikita\3_COURSE\OOD\lab1" -B "D:\Nikita\3_COURSE\OOD\lab1\build" -DCMAKE_TOOLCHAIN_FILE="D:/Nikita/3_COURSE/vcpkg/scripts/buildsystems/vcpkg.cmake" -DBUILD_VISUALIZATION=ON -A x64
+     - cmake --build "D:\Nikita\3_COURSE\OOD\lab1\build" --config Release
+Запуск:
+     - "D:\Nikita\3_COURSE\OOD\lab1\build\Release\geom_app.exe" --input "D:\Nikita\3_COURSE\OOD\lab1\input.txt" --output "D:\Nikita\3_COURSE\OOD\lab1\output.txt"

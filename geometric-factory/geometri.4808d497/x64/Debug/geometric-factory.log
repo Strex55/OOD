@@ -1,0 +1,2175 @@
+﻿  pch.cpp
+  CCircle.cpp
+  CLineSegment.cpp
+  CPoint.cpp
+  CRectangle.cpp
+  CTriangle.cpp
+  FileShapeParser.cpp
+  Functions.cpp
+D:\vcpkg\installed\x64-windows\include\SFML\System\Angle.inl(272,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "FileShapeParser.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(75,17): error C3615: Функция constexpr "sf::operator +" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(77,16):
+      сбой, так как тип "const sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(81,5):
+      тип "sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(91,17): error C3615: Функция constexpr "sf::operator -" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(93,16):
+      сбой, так как тип "const sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(97,5):
+      тип "sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(107,17): error C3615: Функция constexpr "sf::operator *" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(109,16):
+      сбой, так как тип "const sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(113,5):
+      тип "sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(146,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(147,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(148,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(149,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(150,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(151,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(152,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(153,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(154,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\System\Angle.inl(272,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(42,7):
+          при компиляции шаблона класса "sf::Rect"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<T>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,5): warning C4869: "nodiscard" можно применить только к классам, перечислениям и функциям.
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,100): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2988: неопознанное объявление или определение шаблона
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,25): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,34): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,66): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(52,35): error C3615: Функция constexpr "sf::Transform::getMatrix" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      сбой был вызван неопределенной функцией или функцией, не объявленной как "constexpr"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      см. использование "std::array<float,16>::data"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "sf::Rect<float>"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<float>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,31): error C2514: "std::array": невозможно создать шаблон класса.
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+       см. объявление "std::array"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40): error C2662: std::array<_Ty,_Size>::size_type std::array<_Ty,_Size>::size(void) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(503,36):
+       см. объявление "std::array<_Ty,_Size>::size"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40):
+      при попытке сопоставить список аргументов "()"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32): error C3615: Функция constexpr "sf::Transform::transformRect" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,22):
+      сбой, так как тип "const std::array" не является типом литерала
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+      тип "std::array" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+      сбой был вызван достижением конца функции constexpr
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(234,39): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<int>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,45): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,49): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,36): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,40): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,5): error C2535: sf::Texture::Texture(const int): функция-член уже определена или объявлена
+  (компиляция исходного файла "Functions.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,5):
+       см. объявление "sf::Texture::Texture"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,117): error C2143: синтаксическая ошибка: отсутствие ")" перед "{"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,119): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "Functions.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,42): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,46): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string_view(12): warning STL4038: The contents of <string_view> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,43): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,47): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "Functions.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "Functions.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "Functions.cpp")
+  
+  main.cpp
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(75,17): error C3615: Функция constexpr "sf::operator +" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(77,16):
+      сбой, так как тип "const sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(81,5):
+      тип "sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(91,17): error C3615: Функция constexpr "sf::operator -" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(93,16):
+      сбой, так как тип "const sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(97,5):
+      тип "sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(107,17): error C3615: Функция constexpr "sf::operator *" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(109,16):
+      сбой, так как тип "const sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(113,5):
+      тип "sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(146,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(147,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(148,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(149,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(150,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(151,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(152,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(153,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(154,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\System\Angle.inl(272,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(42,7):
+          при компиляции шаблона класса "sf::Rect"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<T>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,5): warning C4869: "nodiscard" можно применить только к классам, перечислениям и функциям.
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,100): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2988: неопознанное объявление или определение шаблона
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,25): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,34): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,66): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(52,35): error C3615: Функция constexpr "sf::Transform::getMatrix" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      сбой был вызван неопределенной функцией или функцией, не объявленной как "constexpr"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      см. использование "std::array<float,16>::data"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "sf::Rect<float>"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<float>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,31): error C2514: "std::array": невозможно создать шаблон класса.
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+       см. объявление "std::array"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40): error C2662: std::array<_Ty,_Size>::size_type std::array<_Ty,_Size>::size(void) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(503,36):
+       см. объявление "std::array<_Ty,_Size>::size"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40):
+      при попытке сопоставить список аргументов "()"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32): error C3615: Функция constexpr "sf::Transform::transformRect" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,22):
+      сбой, так как тип "const std::array" не является типом литерала
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+      тип "std::array" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+      сбой был вызван достижением конца функции constexpr
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(234,39): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<int>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "main.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,45): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,49): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,36): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,40): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,5): error C2535: sf::Texture::Texture(const int): функция-член уже определена или объявлена
+  (компиляция исходного файла "main.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,5):
+       см. объявление "sf::Texture::Texture"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,117): error C2143: синтаксическая ошибка: отсутствие ")" перед "{"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,119): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,42): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,46): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string_view(12): warning STL4038: The contents of <string_view> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,43): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,47): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "main.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "main.cpp")
+  
+  ShapeFactory.cpp
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(75,17): error C3615: Функция constexpr "sf::operator +" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(77,16):
+      сбой, так как тип "const sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(81,5):
+      тип "sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(91,17): error C3615: Функция constexpr "sf::operator -" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(93,16):
+      сбой, так как тип "const sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(97,5):
+      тип "sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(107,17): error C3615: Функция constexpr "sf::operator *" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(109,16):
+      сбой, так как тип "const sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(113,5):
+      тип "sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(146,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(147,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(148,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(149,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(150,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(151,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(152,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(153,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(154,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\System\Angle.inl(272,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(42,7):
+          при компиляции шаблона класса "sf::Rect"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<T>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,5): warning C4869: "nodiscard" можно применить только к классам, перечислениям и функциям.
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,100): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2988: неопознанное объявление или определение шаблона
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,25): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,34): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,66): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(52,35): error C3615: Функция constexpr "sf::Transform::getMatrix" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      сбой был вызван неопределенной функцией или функцией, не объявленной как "constexpr"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      см. использование "std::array<float,16>::data"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "sf::Rect<float>"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<float>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,31): error C2514: "std::array": невозможно создать шаблон класса.
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+       см. объявление "std::array"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40): error C2662: std::array<_Ty,_Size>::size_type std::array<_Ty,_Size>::size(void) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(503,36):
+       см. объявление "std::array<_Ty,_Size>::size"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40):
+      при попытке сопоставить список аргументов "()"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32): error C3615: Функция constexpr "sf::Transform::transformRect" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,22):
+      сбой, так как тип "const std::array" не является типом литерала
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+      тип "std::array" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+      сбой был вызван достижением конца функции constexpr
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(234,39): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<int>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,45): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,49): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,36): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,40): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,5): error C2535: sf::Texture::Texture(const int): функция-член уже определена или объявлена
+  (компиляция исходного файла "ShapeFactory.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,5):
+       см. объявление "sf::Texture::Texture"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,117): error C2143: синтаксическая ошибка: отсутствие ")" перед "{"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,119): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,42): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,46): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string_view(12): warning STL4038: The contents of <string_view> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,43): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,47): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "ShapeFactory.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "ShapeFactory.cpp")
+  
+  test.cpp
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(75,17): error C3615: Функция constexpr "sf::operator +" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(77,16):
+      сбой, так как тип "const sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(81,5):
+      тип "sf::+::<lambda_16287c72c63b32e0a9fa1270f38e4b81>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(91,17): error C3615: Функция constexpr "sf::operator -" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(93,16):
+      сбой, так как тип "const sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(97,5):
+      тип "sf::-::<lambda_306030dfce25397b9816ce24c68c04f0>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(107,17): error C3615: Функция constexpr "sf::operator *" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(109,16):
+      сбой, так как тип "const sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(113,5):
+      тип "sf::*::<lambda_1570e60a8275d4bb357b66a7fbaafc0b>" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(146,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(147,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(148,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(149,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(150,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(151,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(152,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(153,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Color.inl(154,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\System\Angle.inl(272,31): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\optional(11): warning STL4038: The contents of <optional> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,42):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(42,7):
+          при компиляции шаблона класса "sf::Rect"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<T>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,5): warning C4869: "nodiscard" можно применить только к классам, перечислениям и функциям.
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,100): error C2238: непредвиденные лексемы перед ";"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\set(22,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2988: неопознанное объявление или определение шаблона
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2143: синтаксическая ошибка: отсутствие ";" перед "<"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,16): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,24): error C2059: синтаксическая ошибка: <
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,25): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,30):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,34): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,39):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71): error C2065: T: необъявленный идентификатор
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,66): error C2923: sf::Rect: "T" не является допустимым аргументом типа шаблон для параметра "T"
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(71,71):
+       см. объявление "T"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.inl(72,1): error C2447: {: отсутствует заголовок функции (возможно, используется формальный список старого типа)
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(52,35): error C3615: Функция constexpr "sf::Transform::getMatrix" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      сбой был вызван неопределенной функцией или функцией, не объявленной как "constexpr"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(54,25):
+      см. использование "std::array<float,16>::data"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2039: "optional": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "sf::Rect<float>"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<float>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,31): error C2514: "std::array": невозможно создать шаблон класса.
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+       см. объявление "std::array"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(107,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(108,21):
+      при попытке сопоставить список аргументов "(const std::array, int)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40): error C2662: std::array<_Ty,_Size>::size_type std::array<_Ty,_Size>::size(void) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,33):
+      Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(503,36):
+       см. объявление "std::array<_Ty,_Size>::size"
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(110,40):
+      при попытке сопоставить список аргументов "()"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(113,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(114,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(116,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,18):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49): error C2678: бинарный "[": не найден оператор, принимающий левый операнд типа "const std::array" (или приемлемое преобразование отсутствует)
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(539,42):
+      может быть "const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          const _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept const: невозможно преобразовать указатель "this" из "const std::array" в "const std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "const std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(531,39):
+      или       "_Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept"
+          D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+          _Ty &std::array<_Ty,_Size>::operator [](std::array<_Ty,_Size>::size_type) noexcept: невозможно преобразовать указатель "this" из "const std::array" в "std::array<_Ty,_Size> &"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Причина: невозможно преобразовать "const std::array" в "std::array<_Ty,_Size>"
+              D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+              Для преобразования требуется второй оператор пользовательского преобразования или конструктор
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(117,49):
+      при попытке сопоставить список аргументов "(const std::array, size_t)"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32): error C3615: Функция constexpr "sf::Transform::transformRect" не может возвращать константное выражение в качестве результата
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(101,22):
+      сбой, так как тип "const std::array" не является типом литерала
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(406,7):
+      тип "std::array" не является типом литерала, так как он не является агрегированным типом, типом замыкания или не имеет конструктора constexpr, который не являлся бы конструктором копирования или конструктором перемещения.
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(98,32):
+      сбой был вызван достижением конца функции constexpr
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Transform.inl(234,39): error C7525: Встроенные (inline) переменные требуют как минимум "/std:c++17".
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Rect.hpp(98,34): error C2178: "sf::Rect<int>::optional" нельзя объявить с описателем "constexpr"
+  (компиляция исходного файла "test.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,33): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,45): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,22): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,49): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,24): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,36): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,13): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,40): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(137,5): error C2535: sf::Texture::Texture(const int): функция-член уже определена или объявлена
+  (компиляция исходного файла "test.cpp")
+      D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(114,5):
+       см. объявление "sf::Texture::Texture"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\array(19,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,117): error C2143: синтаксическая ошибка: отсутствие ")" перед "{"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Texture.hpp(304,119): error C2059: синтаксическая ошибка: )
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,30): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,42): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(103,46): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Font.hpp(168,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\string_view(12): warning STL4038: The contents of <string_view> are available only with C++17 or later.
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,31): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,43): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,20): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(103,47): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,48): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,60): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,37): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(175,64): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C2039: "filesystem": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,46): error C3083: filesystem: символ слева от "::" должен представлять тип
+  (компиляция исходного файла "test.cpp")
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C2039: "path": не является членом "std".
+  (компиляция исходного файла "test.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\unordered_map(23,1):
+       см. объявление "std"
+  
+D:\vcpkg\installed\x64-windows\include\SFML\Graphics\Image.hpp(227,58): error C1003: число ошибок превышает 100; остановка компиляции
+  (компиляция исходного файла "test.cpp")
+  
+  Создание кода...

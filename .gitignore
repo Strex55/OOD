@@ -1,0 +1,40 @@
+# Сборки CMake
+build/
+out/
+cmake-build-*/
+CMakeFiles/
+*.cmake
+CMakeCache.txt
+Makefile
+
+# Временные файлы сборки
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Директории зависимостей (googletest и другие)
+_deps/
+geometric-factory/build/
+geometric-factory/out/
+
+# IDE
+.vs/
+.vscode/
+*.sln
+*.vcxproj*
+*.user
+
+# Исполняемые файлы
+*.out
+*.app
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Временные файлы
+*.tmp
+*.temp
