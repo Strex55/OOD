@@ -1,4 +1,4 @@
-#include "RectangleDecorator.h"
+#include "RectangleAdapter.h"
 #include <algorithm>
 #include <sstream>
 
@@ -19,30 +19,30 @@ static std::unique_ptr<sf::RectangleShape> makeRectShape(const Point& p1, const 
   return shape;
 }
 
-RectangleDecorator::RectangleDecorator(const Point& p1, const Point& p2)
-  : ShapeDecorator(makeRectShape(p1, p2, width_, height_)), p1_(p1), p2_(p2) {}
+RectangleAdapter::RectangleAdapter(const Point& p1, const Point& p2)
+  : ShapeAdapter(makeRectShape(p1, p2, width_, height_)), p1_(p1), p2_(p2) {}
 
-double RectangleDecorator::getPerimeter() const {
+double RectangleAdapter::getPerimeter() const {
   return 2.0 * (static_cast<double>(width_) + static_cast<double>(height_));
 }
 
-double RectangleDecorator::getArea() const {
+double RectangleAdapter::getArea() const {
   return static_cast<double>(width_) * static_cast<double>(height_);
 }
 
-std::string RectangleDecorator::toOutputString() const {
+std::string RectangleAdapter::toOutputString() const {
   std::ostringstream oss;
   oss << "RECTANGLE: P=" << static_cast<long long>(std::llround(getPerimeter()))
       << "; S=" << static_cast<long long>(std::llround(getArea()));
   return oss.str();
 }
 
-bool RectangleDecorator::containsPoint(const sf::Vector2f& point) const {
+bool RectangleAdapter::containsPoint(const sf::Vector2f& point) const {
   return getBounds().contains(point);
 }
 
-void RectangleDecorator::moveBy(float dx, float dy) {
-  ShapeDecorator::moveBy(dx, dy);
+void RectangleAdapter::moveBy(float dx, float dy) {
+  ShapeAdapter::moveBy(dx, dy);
   p1_.x += static_cast<int>(std::lround(dx));
   p1_.y += static_cast<int>(std::lround(dy));
   p2_.x += static_cast<int>(std::lround(dx));

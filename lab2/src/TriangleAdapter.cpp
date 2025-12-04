@@ -1,4 +1,4 @@
-#include "TriangleDecorator.h"
+#include "TriangleAdapter.h"
 #include <sstream>
 #include <cmath>
 
@@ -15,14 +15,14 @@ static std::unique_ptr<sf::ConvexShape> makeTriangleShape(const Point& p1, const
   return shape;
 }
 
-TriangleDecorator::TriangleDecorator(const Point& p1, const Point& p2, const Point& p3)
-  : ShapeDecorator(makeTriangleShape(p1, p2, p3)), p1_(p1), p2_(p2), p3_(p3) {}
+TriangleAdapter::TriangleAdapter(const Point& p1, const Point& p2, const Point& p3)
+  : ShapeAdapter(makeTriangleShape(p1, p2, p3)), p1_(p1), p2_(p2), p3_(p3) {}
 
-double TriangleDecorator::getPerimeter() const {
+double TriangleAdapter::getPerimeter() const {
   return distance(p1_, p2_) + distance(p2_, p3_) + distance(p3_, p1_);
 }
 
-double TriangleDecorator::getArea() const {
+double TriangleAdapter::getArea() const {
   // Shoelace formula for triangle
   const double area = std::abs(
     static_cast<double>(p1_.x) * (p2_.y - p3_.y) +
@@ -32,7 +32,7 @@ double TriangleDecorator::getArea() const {
   return area;
 }
 
-std::string TriangleDecorator::toOutputString() const {
+std::string TriangleAdapter::toOutputString() const {
   std::ostringstream oss;
   oss << "TRIANGLE: P=" << static_cast<long long>(std::llround(getPerimeter()))
       << "; S=" << static_cast<long long>(std::llround(getArea()));
@@ -43,7 +43,7 @@ static float cross(const sf::Vector2f& a, const sf::Vector2f& b, const sf::Vecto
   return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
 }
 
-bool TriangleDecorator::containsPoint(const sf::Vector2f& point) const {
+bool TriangleAdapter::containsPoint(const sf::Vector2f& point) const {
   sf::Vector2f a(static_cast<float>(p1_.x), static_cast<float>(p1_.y));
   sf::Vector2f b(static_cast<float>(p2_.x), static_cast<float>(p2_.y));
   sf::Vector2f c(static_cast<float>(p3_.x), static_cast<float>(p3_.y));
@@ -53,8 +53,8 @@ bool TriangleDecorator::containsPoint(const sf::Vector2f& point) const {
   return (b1 == b2) && (b2 == b3);
 }
 
-void TriangleDecorator::moveBy(float dx, float dy) {
-  ShapeDecorator::moveBy(dx, dy);
+void TriangleAdapter::moveBy(float dx, float dy) {
+  ShapeAdapter::moveBy(dx, dy);
   p1_.x += static_cast<int>(std::lround(dx));
   p1_.y += static_cast<int>(std::lround(dy));
   p2_.x += static_cast<int>(std::lround(dx));

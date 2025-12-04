@@ -1,59 +1,56 @@
-cmake_minimum_required(VERSION 3.20)
-project(GeomVisualizer LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.15)
+project(GeomVisualizer)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Options
-option(BUILD_VISUALIZATION "Enable SFML window visualization" ON)
+# Указываем vcpkg toolchain
+set(CMAKE_TOOLCHAIN_FILE "D:/Nikita/3_COURSE/vcpkg/scripts/buildsystems/vcpkg.cmake")
 
-# Find SFML (recommend using vcpkg or system package)
-if(BUILD_VISUALIZATION)
-  # Try SFML 3 (CONFIG mode via Homebrew/vcpkg) first
-  find_package(SFML CONFIG QUIET COMPONENTS Graphics Window System)
-  if(NOT SFML_FOUND)
-    # Fallback to SFML 2.5 (module mode)
-    find_package(SFML 2.5 QUIET COMPONENTS graphics window system)
-  endif()
-  if(NOT SFML_FOUND)
-    message(FATAL_ERROR "SFML not found. Install SFML 3 (brew install sfml) or SFML 2.5 (vcpkg install sfml).")
-  endif()
-endif()
+# Ищем SFML 2.5
+find_package(SFML 2.5 REQUIRED COMPONENTS graphics window system)
 
-add_library(geom_core
-  src/Geometry.cpp
-  src/Parser.cpp
-  src/ShapeDecorator.cpp
-  src/TriangleDecorator.cpp
-  src/RectangleDecorator.cpp
-  src/CircleDecorator.cpp
-  src/CompositeShape.cpp
+# Список всех исходных файлов
+set(SOURCE_FILES
+    src/Geometry.cpp
+    src/Parser.cpp
+    src/ShapeAdapter.cpp
+    src/TriangleAdapter.cpp
+    src/RectangleAdapter.cpp
+    src/CircleAdapter.cpp
+    src/CompositeShape.cpp
+    src/SelectionManager.cpp
+    src/DragAndDrop.cpp
+    src/CompositeManager.cpp
+    src/App.cpp
 )
 
-target_include_directories(geom_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-if(BUILD_VISUALIZATION)
-  # Link to proper SFML targets depending on version
-  if(TARGET SFML::Graphics)
-    # SFML 3.x target names
-    target_link_libraries(geom_core PUBLIC SFML::Graphics SFML::Window SFML::System)
-  elseif(TARGET sfml-graphics)
-    # SFML 2.x target names
-    target_link_libraries(geom_core PUBLIC sfml-graphics sfml-window sfml-system)
-  else()
-    message(FATAL_ERROR "SFML targets not found after find_package.")
-  endif()
-endif()
+# Список всех заголовочных файлов
+set(HEADER_FILES
+    include/Geometry.h
+    include/Parser.h
+    include/ShapeAdapter.h
+    include/TriangleAdapter.h
+    include/RectangleAdapter.h
+    include/CircleAdapter.h
+    include/CompositeShape.h
+    include/SelectionManager.h
+    include/DragAnddrop.h
+    include/CompositeManager.h
+    include/App.h
+)
 
+# Основная библиотека
+add_library(geom_core STATIC ${SOURCE_FILES} ${HEADER_FILES})
+target_include_directories(geom_core PUBLIC include)
+target_link_libraries(geom_core PUBLIC sfml-graphics sfml-window sfml-system)
+
+# Исполняемый файл
 add_executable(geom_app src/main.cpp)
 target_link_libraries(geom_app PRIVATE geom_core)
 
+# Предупреждения компилятора
 if(MSVC)
-  target_compile_options(geom_core PRIVATE /W4 /permissive-)
-  target_compile_options(geom_app PRIVATE /W4 /permissive-)
-else()
-  target_compile_options(geom_core PRIVATE -Wall -Wextra -Wpedantic)
-  target_compile_options(geom_app PRIVATE -Wall -Wextra -Wpedantic)
+    target_compile_options(geom_core PRIVATE /W4 /permissive-)
+    target_compile_options(geom_app PRIVATE /W4 /permissive-)
 endif()
-
-

@@ -1,4 +1,4 @@
-#include "CircleDecorator.h"
+#include "CircleAdapter.h"
 #include <sstream>
 
 namespace geom {
@@ -13,32 +13,32 @@ static std::unique_ptr<sf::CircleShape> makeCircleShape(const Point& center, int
   return shape;
 }
 
-CircleDecorator::CircleDecorator(const Point& center, int radius)
-  : ShapeDecorator(makeCircleShape(center, radius)), center_(center), radius_(radius) {}
+CircleAdapter::CircleAdapter(const Point& center, int radius)
+  : ShapeAdapter(makeCircleShape(center, radius)), center_(center), radius_(radius) {}
 
-double CircleDecorator::getPerimeter() const {
+double CircleAdapter::getPerimeter() const {
   return 2.0 * PI() * static_cast<double>(radius_);
 }
 
-double CircleDecorator::getArea() const {
+double CircleAdapter::getArea() const {
   return PI() * static_cast<double>(radius_) * static_cast<double>(radius_);
 }
 
-std::string CircleDecorator::toOutputString() const {
+std::string CircleAdapter::toOutputString() const {
   std::ostringstream oss;
   oss << "CIRCLE: P=" << static_cast<long long>(std::llround(getPerimeter()))
       << "; S=" << static_cast<long long>(std::llround(getArea()));
   return oss.str();
 }
 
-bool CircleDecorator::containsPoint(const sf::Vector2f& point) const {
+bool CircleAdapter::containsPoint(const sf::Vector2f& point) const {
   const float dx = point.x - static_cast<float>(center_.x);
   const float dy = point.y - static_cast<float>(center_.y);
   return (dx * dx + dy * dy) <= static_cast<float>(radius_ * radius_);
 }
 
-void CircleDecorator::moveBy(float dx, float dy) {
-  ShapeDecorator::moveBy(dx, dy);
+void CircleAdapter::moveBy(float dx, float dy) {
+  ShapeAdapter::moveBy(dx, dy);
   center_.x += static_cast<int>(std::lround(dx));
   center_.y += static_cast<int>(std::lround(dy));
 }
