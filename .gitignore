@@ -1,4 +1,4 @@
-# Сборки CMake
+# CMake builds
 build/
 out/
 cmake-build-*/
@@ -7,18 +7,22 @@ CMakeFiles/
 CMakeCache.txt
 Makefile
 
-# Временные файлы сборки
-*.o
-*.obj
+# Dependencies
+_deps/
+geometric-factory/build/
+geometric-factory/out/
+
+# Executables
 *.exe
+*.out
+*.app
 *.dll
 *.so
 *.dylib
 
-# Директории зависимостей (googletest и другие)
-_deps/
-geometric-factory/build/
-geometric-factory/out/
+# Object files
+*.o
+*.obj
 
 # IDE
 .vs/
@@ -26,15 +30,13 @@ geometric-factory/out/
 *.sln
 *.vcxproj*
 *.user
+*.suo
 
-# Исполняемые файлы
-*.out
-*.app
-
-# Системные файлы
+# System files
 .DS_Store
 Thumbs.db
 
-# Временные файлы
+# Temporary files
 *.tmp
 *.temp
+*.log
