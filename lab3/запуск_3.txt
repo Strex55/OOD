@@ -1,0 +1,15 @@
+
+Что сделать на Windows:
+- : MSVC + CMake + vcpkg с SFML 3
+  1) PowerShell (Админ):
+     - git clone https://github.com/microsoft/vcpkg C:\vcpkg
+     - C:\vcpkg\bootstrap-vcpkg.bat
+     - C:\vcpkg\vcpkg.exe install sfml
+     - Проверить, что ставится версия 3.x (vcpkg list sfml)
+  2) Конфигурация/сборка:
+     - cmake -S D:\Study\course_3\OOD\lab3 -B D:\Study\course_3\OOD\lab3\build -DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake -DBUILD_VISUALIZATION=ON -A x64
+     - cmake --build D:\Study\course_3\OOD\lab3\build --config Release
+
+  3) Запуск:
+     - D:\Study\course_3\OOD\lab3\build\Release\geom_app.exe --input D:\Study\course_3\OOD\lab3\input.txt --output D:\Study\course_3\OOD\lab3\output.txt
+
