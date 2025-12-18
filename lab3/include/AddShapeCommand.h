@@ -4,11 +4,14 @@
 #include "Command.h"
 #include <memory>
 
-namespace geom {
+namespace geom
+{
+
     class Application;
     class IGeometry;
 
-    class AddShapeCommand : public ICommand {
+    class AddShapeCommand : public ICommand
+    {
     public:
         AddShapeCommand(Application& app, std::shared_ptr<IGeometry> shape);
         void Execute() override;
@@ -18,5 +21,7 @@ namespace geom {
         Application& app_;
         std::shared_ptr<IGeometry> shape_;
     };
-}
-#endif
+
+} 
+
+#endif 

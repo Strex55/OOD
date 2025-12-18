@@ -3,25 +3,28 @@
 
 #include <SFML/Graphics.hpp>
 
-namespace geom {
+namespace geom
+{
 
-enum class EditorMode {
-  Select,    // Drag-and-drop mode
-  Fill,      // Fill color mode
-  AddTriangle,
-  AddRectangle,
-  AddCircle
-};
+    enum class EditorMode
+    {
+        Select,
+        Fill,
+        AddTriangle,
+        AddRectangle,
+        AddCircle
+    };
 
-class IEditorState {
-public:
-  virtual ~IEditorState() = default;
-  virtual void onMousePress(const sf::Vector2f& pos) = 0;
-  virtual void onMouseMove(const sf::Vector2f& pos) = 0;
-  virtual void onMouseRelease(const sf::Vector2f& pos) = 0;
-  virtual EditorMode getMode() const = 0;
-};
+    class IEditorState
+    {
+    public:
+        virtual ~IEditorState() = default;
+        virtual void OnMousePress(const sf::Vector2f& pos) = 0;     
+        virtual void OnMouseMove(const sf::Vector2f& pos) = 0;      
+        virtual void OnMouseRelease(const sf::Vector2f& pos) = 0;   
+        virtual EditorMode GetMode() const = 0;
+    };
 
-}
+} 
 
-#endif
+#endif 

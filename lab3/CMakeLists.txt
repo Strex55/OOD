@@ -34,8 +34,10 @@ add_library(geom_core
   src/SelectState.cpp
   src/FillState.cpp
   src/AddShapeState.cpp
+  src/AddShapeCommand.cpp
   src/Toolbar.cpp
   src/MoveCommand.cpp
+  src/ChangeStyleCommand.cpp
   src/GroupCommand.cpp
   src/DragAndDrop.cpp
   src/SelectionManager.cpp

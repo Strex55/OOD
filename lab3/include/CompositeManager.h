@@ -17,21 +17,21 @@ namespace geom
             Ungroup
         };
 
-        void performOperation(Operation op,
+        void PerformOperation(Operation op,
             std::vector<std::shared_ptr<IGeometry>>& shapes,
             std::vector<std::shared_ptr<IGeometry>>& selected);
 
     private:
-        void groupSelected(std::vector<std::shared_ptr<IGeometry>>& shapes,
+        void GroupSelected(std::vector<std::shared_ptr<IGeometry>>& shapes,
             std::vector<std::shared_ptr<IGeometry>>& selected);
 
-        void ungroupSelected(std::vector<std::shared_ptr<IGeometry>>& shapes,
+        void UngroupSelected(std::vector<std::shared_ptr<IGeometry>>& shapes,
             std::vector<std::shared_ptr<IGeometry>>& selected);
 
-        bool canGroup(const std::vector<std::shared_ptr<IGeometry>>& selected) const;
-        bool canUngroup(const std::shared_ptr<IGeometry>& shape) const;
+        bool CanGroup(const std::vector<std::shared_ptr<IGeometry>>& selected) const;
+        bool CanUngroup(const std::shared_ptr<IGeometry>& shape) const;
     };
 
-} 
+}
 
-#endif
+#endif 

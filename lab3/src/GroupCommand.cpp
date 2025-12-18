@@ -4,22 +4,28 @@
 #include <algorithm>
 #include <iostream>
 
-namespace geom {
+namespace geom 
+{
 
     GroupCommand::GroupCommand(Operation op,
         std::vector<std::shared_ptr<IGeometry>>& allShapes,
         std::vector<std::shared_ptr<IGeometry>>& selectedShapes)
         : operation_(op)
         , allShapes_(allShapes)
-        , selectedShapes_(selectedShapes) {}
+        , selectedShapes_(selectedShapes) 
+    {
+    }
 
-    void GroupCommand::execute() {
-        //отладка
-        std::cout << "GroupCommand::execute - Operation: "
+    void GroupCommand::Execute()
+    {
+        // Отладочный вывод
+        std::cout << "GroupCommand::Execute - Operation: "
             << (operation_ == Operation::Group ? "Group" : "Ungroup")
             << ", Selected shapes: " << selectedShapes_.size()
             << ", All shapes: " << allShapes_.size() << std::endl;
-        if (operation_ == Operation::Group) {
+
+        if (operation_ == Operation::Group) 
+        {
             // Проверяем, можно ли группировать
             if (selectedShapes_.size() < 2) return;
 
@@ -28,12 +34,14 @@ namespace geom {
             originalChildren_ = selectedShapes_;
 
             // Добавляем все выбранные фигуры в группу
-            for (const auto& shape : originalChildren_) {
-                createdGroup_->add(shape);
+            for (const auto& shape : originalChildren_) 
+            {
+                createdGroup_->Add(shape);
             }
 
             // Удаляем исходные фигуры из основного списка
-            for (const auto& shape : originalChildren_) {
+            for (const auto& shape : originalChildren_) 
+            {
                 allShapes_.erase(
                     std::remove(allShapes_.begin(), allShapes_.end(), shape),
                     allShapes_.end()
@@ -48,7 +56,8 @@ namespace geom {
             selectedShapes_.push_back(createdGroup_);
 
         }
-        else if (operation_ == Operation::Ungroup) {
+        else if (operation_ == Operation::Ungroup) 
+        {
             // Проверяем, можно ли разгруппировать
             if (selectedShapes_.size() != 1) return;
 
@@ -57,7 +66,7 @@ namespace geom {
 
             // Сохраняем группу для отмены
             createdGroup_ = group;
-            originalChildren_ = group->children();
+            originalChildren_ = group->GetChildren();
 
             // Удаляем группу из основного списка
             allShapes_.erase(
@@ -66,7 +75,8 @@ namespace geom {
             );
 
             // Добавляем дочерние фигуры обратно в основной список
-            for (const auto& child : originalChildren_) {
+            for (const auto& child : originalChildren_) 
+            {
                 allShapes_.push_back(child);
             }
 
@@ -76,7 +86,8 @@ namespace geom {
         }
     }
 
-    void GroupCommand::undo() {
+    void GroupCommand::Undo()
+    {
         if (operation_ == Operation::Group) {
             // Отмена группировки = разгруппировка
             if (!createdGroup_) return;
@@ -88,7 +99,8 @@ namespace geom {
             );
 
             // Добавляем исходные фигуры обратно
-            for (const auto& child : originalChildren_) {
+            for (const auto& child : originalChildren_) 
+            {
                 allShapes_.push_back(child);
             }
 
@@ -97,12 +109,14 @@ namespace geom {
             selectedShapes_ = originalChildren_;
 
         }
-        else if (operation_ == Operation::Ungroup) {
+        else if (operation_ == Operation::Ungroup) 
+        {
             // Отмена разгруппировки = группировка
             if (!createdGroup_) return;
 
             // Удаляем дочерние фигуры из основного списка
-            for (const auto& child : originalChildren_) {
+            for (const auto& child : originalChildren_) 
+            {
                 allShapes_.erase(
                     std::remove(allShapes_.begin(), allShapes_.end(), child),
                     allShapes_.end()

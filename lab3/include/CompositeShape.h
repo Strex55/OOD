@@ -1,7 +1,7 @@
 #ifndef GEOM_VISUALIZER_COMPOSITE_SHAPE_H
 #define GEOM_VISUALIZER_COMPOSITE_SHAPE_H
 
-#include "Geometry.h"      
+#include "Geometry.h"
 #include <memory>
 #include <vector>
 
@@ -13,12 +13,12 @@ namespace geom
     public:
         CompositeShape() = default;
 
-        // Composite operations
+        // Операции композита
         void Add(const std::shared_ptr<IGeometry>& child);
         void Remove(const std::shared_ptr<IGeometry>& child);
         const std::vector<std::shared_ptr<IGeometry>>& GetChildren() const { return m_children; }
 
-        // IGeometry interface implementation
+        // Реализация интерфейса IGeometry
         double GetPerimeter() const override;
         double GetArea() const override;
         void Draw(sf::RenderTarget& target) const override;
@@ -27,12 +27,12 @@ namespace geom
         sf::FloatRect GetBounds() const override;
         void MoveBy(float dx, float dy) override;
 
-        // Style setters
+        // Установка стилей
         void SetFillColor(const sf::Color& color) override;
         void SetOutlineColor(const sf::Color& color) override;
         void SetOutlineThickness(float thickness) override;
 
-        // Style getters
+        // Получение стилей
         sf::Color GetFillColor() const override;
         sf::Color GetOutlineColor() const override;
         float GetOutlineThickness() const override;

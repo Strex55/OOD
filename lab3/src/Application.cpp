@@ -1,9 +1,9 @@
 #include "Application.h"
 #include "Parser.h"
-#include "StateFactory.h"     
-#include "Toolbar.h"          
-#include "GroupCommand.h"     
-#include "MoveCommand.h"      
+#include "StateFactory.h"
+#include "Toolbar.h"
+#include "GroupCommand.h"
+#include "MoveCommand.h"
 #include "Constants.h"
 #include <memory>
 #include <SFML/Graphics.hpp>
@@ -11,25 +11,36 @@
 
 namespace geom
 {
-    // Singleton Pattern implementation
+
+    // Реализация шаблона Singleton
     Application& Application::GetInstance()
     {
         static Application instance;
         return instance;
     }
 
-    // Facade Pattern: initialize all subsystems
+    Application::Application()
+        : m_dragging(false)
+        , m_commandHistoryIndex(0)
+    {
+    }
+
+    // Шаблон Facade: инициализация всех подсистем
     void Application::Initialize(const std::string& inputPath, const std::string& outputPath)
     {
         m_inputPath = inputPath;
         m_outputPath = outputPath;
 
-        // Parse input file
+        // Парсинг входного файла
         Parser parser;
         m_shapes = parser.ParseFile(m_inputPath);
         parser.WriteResults(m_outputPath, m_shapes);
 
-        // Create SFML window
+        // ОЧИСТИТЬ ИСТОРИЮ КОМАНД - теперь начальное состояние считается "точкой отсчета"
+        m_commandHistory.clear();
+        m_commandHistoryIndex = 0;
+
+        // Создание SFML окна
         m_window = std::make_unique<sf::RenderWindow>(
             sf::VideoMode(sf::Vector2u(Constants::WINDOW_WIDTH,
                 Constants::WINDOW_HEIGHT)),
@@ -37,14 +48,14 @@ namespace geom
         );
         m_window->setFramerateLimit(Constants::FRAME_RATE_LIMIT);
 
-        // Create toolbar (uses State Pattern)
+        // Создание панели инструментов
         m_toolbar = std::make_unique<Toolbar>(*this);
 
-        // Set initial state (Select mode)
+        // Установка начального состояния
         m_currentState = StateFactory::CreateState(EditorMode::Select, *this);
     }
 
-    // Main application loop
+    // Основной цикл приложения
     void Application::Run()
     {
         if (!m_window)
@@ -118,7 +129,7 @@ namespace geom
             static_cast<float>(event.position.y)
         );
 
-        // Check if click is on toolbar (State Pattern switching)
+        // Проверяем, был ли клик на панели инструментов (переключение состояний)
         bool toolbarClicked = false;
         if (m_toolbar)
         {
@@ -128,20 +139,20 @@ namespace geom
                 pos.y >= tbBounds.position.y &&
                 pos.y <= tbBounds.position.y + tbBounds.size.y)
             {
-                m_toolbar->HandleClick(pos);  // This may change state via State Pattern
+                m_toolbar->HandleClick(pos); // Может изменить состояние через State Pattern
                 toolbarClicked = true;
             }
         }
 
         if (!toolbarClicked && m_currentState)
         {
-            // Delegate to current state (State Pattern)
+            // Делегируем текущему состоянию (State Pattern)
             m_currentState->OnMousePress(pos);
 
-            // Start dragging if in Select mode
+            // Начинаем перетаскивание, если в режиме выделения
             if (m_currentState->GetMode() == EditorMode::Select && !m_selected.empty())
             {
-                // Save initial positions for undo command
+                // Сохраняем начальные позиции для команды отмены
                 m_dragStartPositions.clear();
                 for (const auto& shape : m_selected)
                 {
@@ -169,10 +180,10 @@ namespace geom
             static_cast<float>(event.position.y)
         );
 
-        // Complete dragging and create Command Pattern command
+        // Завершаем перетаскивание и создаем команду (Command Pattern)
         if (m_dragging && !m_selected.empty() && !m_dragStartPositions.empty())
         {
-            CreateMoveCommandForDragDrop();  // Creates MoveCommand
+            CreateMoveCommandForDragDrop(); // Создает MoveCommand
             m_dragStartPositions.clear();
         }
 
@@ -196,7 +207,7 @@ namespace geom
             m_currentState->OnMouseMove(pos);
         }
 
-        // Handle real-time dragging (visual feedback)
+        // Обработка перетаскивания в реальном времени (визуальная обратная связь)
         if (m_dragging && !m_selected.empty())
         {
             const float dx = pos.x - m_lastMousePos.x;
@@ -221,12 +232,16 @@ namespace geom
 
         if (!ctrl) return;
 
-        // Use switch-case for better readability
+        // Используем switch-case для лучшей читаемости
         switch (event.scancode)
         {
         case sf::Keyboard::Scancode::Z:
-        case sf::Keyboard::Scancode::Y:
             Undo();
+            break;
+
+        case sf::Keyboard::Scancode::Y:
+        case sf::Keyboard::Scancode::R:
+            Redo();  // Ctrl+Y или Ctrl+R для повтора
             break;
 
         case sf::Keyboard::Scancode::G:
@@ -257,14 +272,14 @@ namespace geom
             break;
 
         default:
-            // Other keys not handled
+            // Другие клавиши не обрабатываются
             break;
         }
     }
 
     void Application::CreateMoveCommandForDragDrop()
     {
-        // Calculate total movement for Command Pattern
+        // Вычисляем общее перемещение для Command Pattern
         float totalDx = 0.0f;
         float totalDy = 0.0f;
         int movedCount = 0;
@@ -296,7 +311,7 @@ namespace geom
                 shapesToMove.push_back(shape);
             }
 
-            // Create and execute Command Pattern command
+            // Создаем и выполняем команду Command Pattern
             auto cmd = std::make_unique<MoveCommand>(
                 std::move(shapesToMove),
                 avgDx,
@@ -321,7 +336,7 @@ namespace geom
             shape->Draw(*m_window);
         }
 
-        // Draw selection boxes
+        // Отрисовка рамок выделения
         for (const auto& selected : m_selected)
         {
             const auto bounds = selected->GetBounds();
@@ -336,7 +351,7 @@ namespace geom
         m_window->display();
     }
 
-    // ==================== Facade Methods ====================
+    // Facade Methods 
 
     void Application::AddShape(std::shared_ptr<IGeometry> shape)
     {
@@ -379,7 +394,7 @@ namespace geom
         return m_currentState ? m_currentState->GetMode() : EditorMode::Select;
     }
 
-    // Command Pattern: execute command and manage history
+    // Command Pattern: выполнение команды и управление историей
     void Application::ExecuteCommand(std::unique_ptr<ICommand> cmd)
     {
         if (!cmd)
@@ -387,7 +402,7 @@ namespace geom
             return;
         }
 
-        // Truncate history if not at the end (for redo overwrite)
+        // Обрезаем историю, если не в конце (для перезаписи redo)
         if (m_commandHistoryIndex < m_commandHistory.size())
         {
             m_commandHistory.resize(m_commandHistoryIndex);
@@ -396,9 +411,17 @@ namespace geom
         cmd->Execute();
         m_commandHistory.push_back(std::move(cmd));
         m_commandHistoryIndex = m_commandHistory.size();
+
+        // Ограничим размер истории (опционально, чтобы не росла бесконечно)
+        const size_t MAX_HISTORY_SIZE = 50;
+        if (m_commandHistory.size() > MAX_HISTORY_SIZE)
+        {
+            m_commandHistory.erase(m_commandHistory.begin());
+            m_commandHistoryIndex--;
+        }
     }
 
-    // Command Pattern: undo last command
+    // Command Pattern: отмена последней команды
     void Application::Undo()
     {
         if (m_commandHistoryIndex > 0)
@@ -407,24 +430,31 @@ namespace geom
 
             if (m_commandHistoryIndex < m_commandHistory.size())
             {
-                try
-                {
-                    m_commandHistory[m_commandHistoryIndex]->Undo();
-                }
-                catch (...)
-                {
-                    // Если команда не может быть отменена (например, фигуры удалены)
-                    // Удаляем её из истории
-                    m_commandHistory.erase(m_commandHistory.begin() + m_commandHistoryIndex);
-                    m_commandHistoryIndex = m_commandHistory.size();
-                }
+                m_commandHistory[m_commandHistoryIndex]->Undo();
             }
             else
             {
-                // Индекс вне границ - сбрасываем историю
+                // Если индекс вне границ, сбрасываем историю
                 m_commandHistory.clear();
                 m_commandHistoryIndex = 0;
             }
         }
+        else if (m_commandHistoryIndex == 0 && !m_commandHistory.empty())
+        {
+            // Особый случай: отмена самой первой команды
+            m_commandHistory[0]->Undo();
+            m_commandHistoryIndex = 0; // остаемся на 0
+        }
     }
-} 
+
+    // Command Pattern: повтор последней отмененной команды
+    void Application::Redo()
+    {
+        if (m_commandHistoryIndex < m_commandHistory.size())
+        {
+            m_commandHistory[m_commandHistoryIndex]->Execute();
+            ++m_commandHistoryIndex;
+        }
+    }
+
+}

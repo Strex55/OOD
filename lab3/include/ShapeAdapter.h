@@ -1,7 +1,7 @@
 #ifndef GEOM_VISUALIZER_SHAPE_ADAPTER_H
 #define GEOM_VISUALIZER_SHAPE_ADAPTER_H
 
-#include "Geometry.h"           
+#include "Geometry.h"
 #include <SFML/Graphics.hpp>
 #include <memory>
 

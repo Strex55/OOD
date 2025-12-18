@@ -1,8 +1,9 @@
 #include "ChangeStyleCommand.h"
 #include <iostream>
 
-namespace geom
+namespace geom 
 {
+
     ChangeStyleCommand::ChangeStyleCommand(
         std::vector<std::shared_ptr<IGeometry>> shapes,
         const sf::Color& oldFillColor,
@@ -10,23 +11,22 @@ namespace geom
         const sf::Color& oldOutlineColor,
         const sf::Color& newOutlineColor,
         float oldThickness,
-        float newThickness
-    )
-        : m_shapes(std::move(shapes))
-        , m_oldFillColor(oldFillColor)
-        , m_newFillColor(newFillColor)
-        , m_oldOutlineColor(oldOutlineColor)
-        , m_newOutlineColor(newOutlineColor)
-        , m_oldThickness(oldThickness)
-        , m_newThickness(newThickness)
+        float newThickness)
+        : m_shapes(std::move(shapes)),
+        m_oldFillColor(oldFillColor),
+        m_newFillColor(newFillColor),
+        m_oldOutlineColor(oldOutlineColor),
+        m_newOutlineColor(newOutlineColor),
+        m_oldThickness(oldThickness),
+        m_newThickness(newThickness)
     {
     }
 
     void ChangeStyleCommand::Execute()
     {
-        if (!m_executed)
+        if (!m_executed) 
         {
-            for (auto& shape : m_shapes)
+            for (auto& shape : m_shapes) 
             {
                 shape->SetFillColor(m_newFillColor);
                 shape->SetOutlineColor(m_newOutlineColor);
@@ -38,9 +38,9 @@ namespace geom
 
     void ChangeStyleCommand::Undo()
     {
-        if (m_executed)
+        if (m_executed) 
         {
-            for (auto& shape : m_shapes)
+            for (auto& shape : m_shapes) 
             {
                 shape->SetFillColor(m_oldFillColor);
                 shape->SetOutlineColor(m_oldOutlineColor);

@@ -3,22 +3,27 @@
 
 #include "EditorState.h"
 
-namespace geom {
+namespace geom
+{
 
-class Application;
+    class Application;
 
-class FillState : public IEditorState {
-public:
-  explicit FillState(Application& app);
-  void onMousePress(const sf::Vector2f& pos) override;
-  void onMouseMove(const sf::Vector2f& pos) override;
-  void onMouseRelease(const sf::Vector2f& pos) override;
-  EditorMode getMode() const override { return EditorMode::Fill; }
+    class FillState : public IEditorState
+    {
+    public:
+        explicit FillState(Application& app);
+        void OnMousePress(const sf::Vector2f& pos) override;
+        void OnMouseMove(const sf::Vector2f& pos) override;
+        void OnMouseRelease(const sf::Vector2f& pos) override;
+        EditorMode GetMode() const override
+        {
+            return EditorMode::Fill;
+        }
 
-private:
-  Application& app_;
-};
+    private:
+        Application& app_;
+    };
 
 }
 
-#endif
+#endif 

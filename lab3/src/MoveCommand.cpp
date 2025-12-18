@@ -1,8 +1,9 @@
 #include "MoveCommand.h"
 #include "Geometry.h"
 
-namespace geom
+namespace geom 
 {
+
     MoveCommand::MoveCommand(std::vector<std::shared_ptr<IGeometry>> shapes, float dx, float dy)
         : m_shapes(std::move(shapes)), m_dx(dx), m_dy(dy)
     {
@@ -10,9 +11,9 @@ namespace geom
 
     void MoveCommand::Execute()
     {
-        if (!m_executed)
+        if (!m_executed) 
         {
-            for (auto& shape : m_shapes)
+            for (auto& shape : m_shapes) 
             {
                 shape->MoveBy(m_dx, m_dy);
             }
@@ -22,24 +23,25 @@ namespace geom
 
     void MoveCommand::Undo()
     {
-        if (m_executed)
+        if (m_executed) 
         {
-            // Check if shapes still exist
+            // ѕровер€ем, что фигуры все еще существуют
             std::vector<std::shared_ptr<IGeometry>> validShapes;
-            for (auto& shape : m_shapes)
+            for (auto& shape : m_shapes) 
             {
-                if (shape)
+                if (shape) 
                 {
                     validShapes.push_back(shape);
                 }
             }
 
-            // Move back only valid shapes
-            for (auto& shape : validShapes)
+            // ѕеремещаем обратно только валидные фигуры
+            for (auto& shape : validShapes) 
             {
                 shape->MoveBy(-m_dx, -m_dy);
             }
             m_executed = false;
         }
     }
-}
+
+} 

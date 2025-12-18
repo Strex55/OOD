@@ -2,102 +2,131 @@
 #include <algorithm>
 #include <sstream>
 
-namespace geom {
-
-void CompositeShape::add(const std::shared_ptr<IGeometry>& child) {
-  children_.push_back(child);
-}
-
-void CompositeShape::remove(const std::shared_ptr<IGeometry>& child) {
-  children_.erase(std::remove(children_.begin(), children_.end(), child), children_.end());
-}
-
-double CompositeShape::getPerimeter() const {
-  double p = 0.0;
-  for (const auto& c : children_) p += c->getPerimeter();
-  return p;
-}
-
-double CompositeShape::getArea() const {
-  double s = 0.0;
-  for (const auto& c : children_) s += c->getArea();
-  return s;
-}
-
-void CompositeShape::draw(sf::RenderTarget& target) const {
-  for (const auto& c : children_) c->draw(target);
-}
-
-std::string CompositeShape::toOutputString() const {
-  std::ostringstream oss;
-  oss << "GROUP: P=" << static_cast<long long>(std::llround(getPerimeter()))
-      << "; S=" << static_cast<long long>(std::llround(getArea()));
-  return oss.str();
-}
-
-bool CompositeShape::containsPoint(const sf::Vector2f& point) const {
-  for (const auto& c : children_) {
-    if (c->containsPoint(point)) return true;
-  }
-  return false;
-}
-
-sf::FloatRect CompositeShape::getBounds() const {
-  if (children_.empty()) return sf::FloatRect();
-  auto b = children_.front()->getBounds();
-  float left = b.position.x;
-  float top = b.position.y;
-  float right = b.position.x + b.size.x;
-  float bottom = b.position.y + b.size.y;
-  for (size_t i = 1; i < children_.size(); ++i) {
-    auto bi = children_[i]->getBounds();
-    left = std::min(left, bi.position.x);
-    top = std::min(top, bi.position.y);
-    right = std::max(right, bi.position.x + bi.size.x);
-    bottom = std::max(bottom, bi.position.y + bi.size.y);
-  }
-  return sf::FloatRect(sf::Vector2f(left, top), sf::Vector2f(right - left, bottom - top));
-}
-
-void CompositeShape::moveBy(float dx, float dy) {
-  for (const auto& c : children_) c->moveBy(dx, dy);
-}
-
-sf::Color CompositeShape::GetFillColor() const
+namespace geom
 {
-    if (children_.empty())
-        return sf::Color::Transparent;
 
-    // Return color of first child (or handle differently)
-    return children_[0]->GetFillColor();
-}
+    void CompositeShape::Add(const std::shared_ptr<IGeometry>& child)
+    {
+        m_children.push_back(child);
+    }
 
-sf::Color CompositeShape::GetOutlineColor() const
-{
-    if (children_.empty())
-        return sf::Color::Transparent;
+    void CompositeShape::Remove(const std::shared_ptr<IGeometry>& child)
+    {
+        m_children.erase(std::remove(m_children.begin(), m_children.end(), child), m_children.end());
+    }
 
-    return children_[0]->GetOutlineColor();
-}
+    double CompositeShape::GetPerimeter() const
+    {
+        double p = 0.0;
+        for (const auto& c : m_children) p += c->GetPerimeter();
+        return p;
+    }
 
-float CompositeShape::GetOutlineThickness() const
-{
-    if (children_.empty())
-        return 0.0f;
+    double CompositeShape::GetArea() const
+    {
+        double s = 0.0;
+        for (const auto& c : m_children) s += c->GetArea();
+        return s;
+    }
 
-    return children_[0]->GetOutlineThickness();
-}
+    void CompositeShape::Draw(sf::RenderTarget& target) const
+    {
+        for (const auto& c : m_children) c->Draw(target);
+    }
 
-void CompositeShape::setFillColor(const sf::Color& color) {
-  for (const auto& c : children_) c->setFillColor(color);
-}
+    std::string CompositeShape::ToOutputString() const
+    {
+        std::ostringstream oss;
+        oss << "GROUP: P=" << static_cast<long long>(std::llround(GetPerimeter()))
+            << "; S=" << static_cast<long long>(std::llround(GetArea()));
+        return oss.str();
+    }
 
-void CompositeShape::setOutlineColor(const sf::Color& color) {
-  for (const auto& c : children_) c->setOutlineColor(color);
-}
+    bool CompositeShape::ContainsPoint(const sf::Vector2f& point) const
+    {
+        for (const auto& c : m_children)
+        {
+            if (c->ContainsPoint(point)) return true;
+        }
+        return false;
+    }
 
-void CompositeShape::setOutlineThickness(float thickness) {
-  for (const auto& c : children_) c->setOutlineThickness(thickness);
-}
+    sf::FloatRect CompositeShape::GetBounds() const
+    {
+        if (m_children.empty()) return sf::FloatRect();
+
+        auto b = m_children.front()->GetBounds();
+
+        float left = b.position.x;
+        float top = b.position.y;
+        float right = b.position.x + b.size.x;
+        float bottom = b.position.y + b.size.y;
+
+        for (size_t i = 1; i < m_children.size(); ++i)
+        {
+            auto bi = m_children[i]->GetBounds();
+            float biLeft = bi.position.x;
+            float biTop = bi.position.y;
+            float biRight = bi.position.x + bi.size.x;
+            float biBottom = bi.position.y + bi.size.y;
+
+            if (biLeft < left) left = biLeft;
+            if (biTop < top) top = biTop;
+            if (biRight > right) right = biRight;
+            if (biBottom > bottom) bottom = biBottom;
+        }
+
+        return sf::FloatRect(sf::Vector2f(left, top), sf::Vector2f(right - left, bottom - top));
+    }
+
+    void CompositeShape::MoveBy(float dx, float dy)
+    {
+        for (const auto& c : m_children) c->MoveBy(dx, dy);
+    }
+
+    sf::Color CompositeShape::GetFillColor() const
+    {
+        if (m_children.empty())
+        {
+            return sf::Color::Transparent;
+        }
+
+        return m_children[0]->GetFillColor();
+    }
+
+    sf::Color CompositeShape::GetOutlineColor() const
+    {
+        if (m_children.empty())
+        {
+            return sf::Color::Transparent;
+        }
+
+        return m_children[0]->GetOutlineColor();
+    }
+
+    float CompositeShape::GetOutlineThickness() const
+    {
+        if (m_children.empty())
+        {
+            return 0.0f;
+        }
+
+        return m_children[0]->GetOutlineThickness();
+    }
+
+    void CompositeShape::SetFillColor(const sf::Color& color)
+    {
+        for (const auto& c : m_children) c->SetFillColor(color);
+    }
+
+    void CompositeShape::SetOutlineColor(const sf::Color& color)
+    {
+        for (const auto& c : m_children) c->SetOutlineColor(color);
+    }
+
+    void CompositeShape::SetOutlineThickness(float thickness)
+    {
+        for (const auto& c : m_children) c->SetOutlineThickness(thickness);
+    }
 
 }

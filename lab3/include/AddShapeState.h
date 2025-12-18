@@ -3,28 +3,34 @@
 
 #include "EditorState.h"
 
-namespace geom {
+namespace geom
+{
 
-class Application;
+    class Application;
 
-class AddShapeState : public IEditorState {
-public:
-  AddShapeState(Application& app, EditorMode mode);
-  void onMousePress(const sf::Vector2f& pos) override;
-  void onMouseMove(const sf::Vector2f& pos) override;
-  void onMouseRelease(const sf::Vector2f& pos) override;
-  EditorMode getMode() const override { return mode_; }
+    class AddShapeState : public IEditorState
+    {
+    public:
+        AddShapeState(Application& app, EditorMode mode);
+        void OnMousePress(const sf::Vector2f& pos) override;
+        void OnMouseMove(const sf::Vector2f& pos) override;
+        void OnMouseRelease(const sf::Vector2f& pos) override;
+        EditorMode GetMode() const override
+        {
+            return mode_;
+        }
 
-private:
-  Application& app_;
-  EditorMode mode_;
-  bool firstClick_;
-  bool secondClick_;  // For triangle (need 3 points)
-  bool circleCenterSet_;  // For circle (need center then radius)
-  struct LocalPoint { int x, y; } p1_, p2_, p3_, center_;
-  int radius_;
-};
+    private:
+        Application& app_;
+        EditorMode mode_;
+        bool firstClick_;
+        bool secondClick_;       
+        bool circleCenterSet_;   
+
+        struct LocalPoint { int x, y; } p1_, p2_, p3_, center_; 
+        int radius_; 
+    };
 
 }
 
-#endif 
+#endif

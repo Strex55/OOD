@@ -1,7 +1,7 @@
 #ifndef GEOM_VISUALIZER_CHANGE_STYLE_COMMAND_H
 #define GEOM_VISUALIZER_CHANGE_STYLE_COMMAND_H
 
-#include "Command.h"        
+#include "Command.h"
 #include "Geometry.h"
 #include <SFML/Graphics.hpp>
 #include <memory>
@@ -9,6 +9,7 @@
 
 namespace geom
 {
+
     class ChangeStyleCommand : public ICommand
     {
     public:
@@ -28,12 +29,12 @@ namespace geom
     private:
         std::vector<std::shared_ptr<IGeometry>> m_shapes;
 
-        // Old styles (for undo)
+        // Старые стили (для отмены)
         sf::Color m_oldFillColor;
         sf::Color m_oldOutlineColor;
         float m_oldThickness;
 
-        // New styles (for execute)
+        // Новые стили (для выполнения)
         sf::Color m_newFillColor;
         sf::Color m_newOutlineColor;
         float m_newThickness;

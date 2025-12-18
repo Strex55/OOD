@@ -2,11 +2,11 @@
 #define GEOM_VISUALIZER_APPLICATION_H
 
 #include "Geometry.h"
-#include "EditorState.h"          
-#include "Command.h"              
-#include "CompositeManager.h"     
-#include "DragAndDrop.h"   
-#include "SelectionManager.h"     
+#include "EditorState.h"
+#include "Command.h"
+#include "CompositeManager.h"
+#include "DragAndDrop.h"
+#include "SelectionManager.h"
 #include <SFML/Graphics.hpp>
 #include <memory>
 #include <vector>
@@ -14,20 +14,21 @@
 
 namespace geom
 {
+
     class Application
     {
     public:
-        // Singleton Pattern implementation
+        // Реализация шаблона Singleton
         static Application& GetInstance();
         Application(const Application&) = delete;
         Application& operator=(const Application&) = delete;
 
-        // Facade Pattern: simplified interface methods
+        // Шаблон Facade: упрощенные методы интерфейса
         void Initialize(const std::string& inputPath, const std::string& outputPath);
         void Run();
         void Shutdown();
 
-        // Shape management
+        // Управление фигурами
         void AddShape(std::shared_ptr<IGeometry> shape);
         void RemoveShape(std::shared_ptr<IGeometry> shape);
 
@@ -41,7 +42,7 @@ namespace geom
             return m_shapes;
         }
 
-        // Selection management
+        // Управление выделением
         void SelectShape(std::shared_ptr<IGeometry> shape, bool addToSelection = false);
         void ClearSelection();
 
@@ -55,7 +56,7 @@ namespace geom
             return m_selected;
         }
 
-        // State Pattern: editor state management
+        // State Pattern: управление состоянием редактора
         void SetState(std::unique_ptr<IEditorState> state);
         IEditorState* GetCurrentState() const
         {
@@ -64,7 +65,7 @@ namespace geom
 
         EditorMode GetCurrentMode() const;
 
-        // Style management (for toolbar)
+        // Управление стилями (для панели инструментов)
         void SetOutlineColor(const sf::Color& color)
         {
             m_outlineColor = color;
@@ -95,17 +96,18 @@ namespace geom
             return m_outlineThickness;
         }
 
-        // Command Pattern: command execution and undo
+        // Command Pattern: выполнение команд и отмена
         void ExecuteCommand(std::unique_ptr<ICommand> cmd);
         void Undo();
+        void Redo();
 
-        // Window access
+        // Доступ к окну
         sf::RenderWindow* GetWindow()
         {
             return m_window.get();
         }
 
-        // Access to managers from lab 2
+        // Доступ к менеджерам из лабораторной работы 2
         SelectionManager& GetSelectionManager()
         {
             return m_selectionManager;
@@ -122,48 +124,51 @@ namespace geom
         }
 
     private:
-        // Private constructor for Singleton
-        Application() = default;
+        // Приватный конструктор для Singleton
+        Application();
         ~Application() = default;
 
-        // Internal event processing
+        // Внутренняя обработка событий
         void ProcessEvents();
         void HandleMouseButtonPressed(const sf::Event::MouseButtonPressed& event);
         void HandleMouseButtonReleased(const sf::Event::MouseButtonReleased& event);
         void HandleMouseMoved(const sf::Event::MouseMoved& event);
         void HandleKeyPressed(const sf::Event::KeyPressed& event);
 
-        // Command creation for drag & drop
+        // Создание команды для перетаскивания
         void CreateMoveCommandForDragDrop();
 
-        // Data members
+        // Рендеринг
+        void Render();
+
+        // Члены данных
         std::vector<std::shared_ptr<IGeometry>> m_shapes;
         std::vector<std::shared_ptr<IGeometry>> m_selected;
         std::unique_ptr<IEditorState> m_currentState;  // State Pattern
 
-        // Style properties (for toolbar)
+        // Свойства стилей (для панели инструментов)
         sf::Color m_outlineColor = sf::Color::Black;
         sf::Color m_fillColor = sf::Color::White;
         float m_outlineThickness = 1.0f;
 
-        // Command Pattern: history of commands for undo
+        // Command Pattern: история команд для отмены
         std::vector<std::unique_ptr<ICommand>> m_commandHistory;
         size_t m_commandHistoryIndex = 0;
 
-        // Managers from lab 2
+        // Менеджеры из лабораторной работы 2
         SelectionManager m_selectionManager;
         DragDropManager m_dragDropManager;
         CompositeManager m_compositeManager;  // Composite Pattern
 
-        // SFML window and toolbar
+        // SFML окно и панель инструментов
         std::unique_ptr<sf::RenderWindow> m_window;
-        std::unique_ptr<class Toolbar> m_toolbar;  // Uses State and Command patterns
+        std::unique_ptr<class Toolbar> m_toolbar;  // Использует State и Command patterns
 
-        // File paths
+        // Пути к файлам
         std::string m_inputPath;
         std::string m_outputPath;
 
-        // Drag & Drop state
+        // Состояние перетаскивания
         bool m_dragging = false;
         sf::Vector2f m_lastMousePos;
         std::vector<sf::Vector2f> m_dragStartPositions;

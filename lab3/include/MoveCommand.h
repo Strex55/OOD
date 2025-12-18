@@ -7,6 +7,7 @@
 
 namespace geom
 {
+
     class IGeometry;
 
     class MoveCommand : public ICommand
@@ -22,6 +23,7 @@ namespace geom
         float m_dx, m_dy;
         bool m_executed = false;
     };
-}
 
-#endif 
+} 
+
+#endif

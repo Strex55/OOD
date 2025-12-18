@@ -11,12 +11,12 @@ namespace geom
     class DragDropManager
     {
     public:
-        void startDragging(const sf::Vector2f& mousePosition);
-        void updateDragging(const sf::Vector2f& mousePosition,
+        void StartDragging(const sf::Vector2f& mousePosition);
+        void UpdateDragging(const sf::Vector2f& mousePosition,
             std::vector<std::shared_ptr<IGeometry>>& selected);
-        void stopDragging();
+        void StopDragging();
 
-        bool isDragging() const { return isDragging_; }
+        bool IsDragging() const { return isDragging_; }
 
     private:
         bool isDragging_ = false;

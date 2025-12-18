@@ -12,15 +12,16 @@ namespace geom
     class SelectionManager
     {
     public:
-        void selectAtPosition(const sf::Vector2f& position,
+        void SelectAtPosition(const sf::Vector2f& position,
             const std::vector<std::shared_ptr<IGeometry>>& shapes,
-            bool addToSelection);
+            bool AddToSelection);
 
-        void clearSelection();
-        void toggleSelection(const std::shared_ptr<IGeometry>& shape);
+        void ClearSelection();
+        void ToggleSelection(const std::shared_ptr<IGeometry>& shape);
 
-        const std::vector<std::shared_ptr<IGeometry>>& getSelected() const { return selected_; }
-        bool isEmpty() const { return selected_.empty(); }
+        const std::vector<std::shared_ptr<IGeometry>>& GetSelected() const { return selected_; }
+        bool IsEmpty() const { return selected_.empty(); }
+        int GetSelectionCount() const { return static_cast<int>(selected_.size()); }
 
     private:
         std::vector<std::shared_ptr<IGeometry>> selected_;
@@ -28,4 +29,4 @@ namespace geom
 
 } 
 
-#endif
+#endif 

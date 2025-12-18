@@ -5,11 +5,14 @@
 #include <memory>
 #include <vector>
 
-namespace geom {
+namespace geom
+{
+
     class IGeometry;
     class CompositeShape;
 
-    class GroupCommand : public ICommand {
+    class GroupCommand : public ICommand
+    {
     public:
         enum class Operation { Group, Ungroup };
 
@@ -17,8 +20,8 @@ namespace geom {
             std::vector<std::shared_ptr<IGeometry>>& allShapes,
             std::vector<std::shared_ptr<IGeometry>>& selectedShapes);
 
-        void execute() override;
-        void undo() override;
+        void Execute() override;
+        void Undo() override;
 
     private:
         Operation operation_;
@@ -27,5 +30,7 @@ namespace geom {
         std::shared_ptr<CompositeShape> createdGroup_;
         std::vector<std::shared_ptr<IGeometry>> originalChildren_;
     };
-}
-#endif
+
+} 
+
+#endif 

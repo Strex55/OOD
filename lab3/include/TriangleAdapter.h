@@ -3,28 +3,30 @@
 
 #include "ShapeAdapter.h"
 
-namespace geom {
+namespace geom
+{
 
-class TriangleAdapter : public ShapeAdapter {
-public:
-  TriangleAdapter(const Point& p1, const Point& p2, const Point& p3);
-  ~TriangleAdapter() override = default;
+    class TriangleAdapter : public ShapeAdapter
+    {
+    public:
+        TriangleAdapter(const Point& p1, const Point& p2, const Point& p3);
+        ~TriangleAdapter() override = default;
 
-  double getPerimeter() const override;
-  double getArea() const override;
-  std::string toOutputString() const override;
-  bool containsPoint(const sf::Vector2f& point) const override;
-  void moveBy(float dx, float dy) override;
-  void setFillColor(const sf::Color& color) override;
-  void setOutlineColor(const sf::Color& color) override;
-  void setOutlineThickness(float thickness) override;
+        double GetPerimeter() const override;
+        double GetArea() const override;
+        std::string ToOutputString() const override;
+        bool ContainsPoint(const sf::Vector2f& point) const override;
+        void MoveBy(float dx, float dy) override;
+        void SetFillColor(const sf::Color& color) override;
+        void SetOutlineColor(const sf::Color& color) override;
+        void SetOutlineThickness(float thickness) override;
 
-private:
-  Point p1_;
-  Point p2_;
-  Point p3_;
-};
+    private:
+        Point p1_;
+        Point p2_;
+        Point p3_;
+    };
 
-}  
+} 
 
-#endif
+#endif 
