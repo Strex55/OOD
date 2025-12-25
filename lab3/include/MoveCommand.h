@@ -18,10 +18,14 @@ namespace geom
         void Execute() override;
         void Undo() override;
 
+        // Добавляем новый метод
+        void MarkAsExecuted() { m_executed = true; }
+
     private:
         std::vector<std::shared_ptr<IGeometry>> m_shapes;
-        float m_dx, m_dy;
-        bool m_executed = false;
+        float m_dx;
+        float m_dy;
+        bool m_executed;
     };
 
 } 

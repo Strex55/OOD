@@ -171,9 +171,12 @@ namespace geom
         // —осто€ние перетаскивани€
         bool m_dragging = false;
         sf::Vector2f m_lastMousePos;
+        sf::Vector2f m_dragStartMousePos;  // Ќачальна€ позици€ мыши при начале перетаскивани€
         std::vector<sf::Vector2f> m_dragStartPositions;
+        float m_totalDragX = 0.0f;  // ќбщее перемещение по X за врем€ перетаскивани€
+        float m_totalDragY = 0.0f;  // ќбщее перемещение по Y за врем€ перетаскивани€
     };
 
-} 
+}
 
-#endif 
+#endif

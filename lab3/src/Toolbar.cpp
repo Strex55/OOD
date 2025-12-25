@@ -226,20 +226,12 @@ namespace geom
     // Возвращает 1 если клик был обработан, 0 если нет
     int Toolbar::HandleClick(const sf::Vector2f& pos)
     {
-        // Отладочный вывод
-        // std::cout << "Toolbar click at: " << pos.x << ", " << pos.y << std::endl;
-
         // Проверка кнопок инструментов (переключение состояний)
         for (size_t i = 0; i < m_toolButtons.size(); ++i)
         {
             const auto& btn = m_toolButtons[i];
             const auto btnPos = btn.getPosition();
             const auto btnSize = btn.getSize();
-
-            // Отладочный вывод
-            // std::cout << "Tool button " << i << " bounds: " 
-            //           << btnPos.x << "-" << (btnPos.x + btnSize.x) << ", "
-            //           << btnPos.y << "-" << (btnPos.y + btnSize.y) << std::endl;
 
             if (pos.x >= btnPos.x && pos.x <= btnPos.x + btnSize.x &&
                 pos.y >= btnPos.y && pos.y <= btnPos.y + btnSize.y)
@@ -334,10 +326,9 @@ namespace geom
                 m_selectedThicknessIndex = static_cast<int>(i);
                 float thickness = Constants::AVAILABLE_THICKNESSES[i];
 
-                // Применяем толщину только в режимах, где это имеет смысл
+                // Только в режиме Select меняем толщину
                 EditorMode currentMode = m_app.GetCurrentMode();
-
-                if (currentMode != EditorMode::Select) // В Select не меняем толщину
+                if (currentMode == EditorMode::Select)
                 {
                     // Применение толщины с возможностью отмены
                     auto& selected = m_app.GetSelected();
@@ -363,10 +354,12 @@ namespace geom
 
                         m_app.ExecuteCommand(std::move(cmd));
                     }
-                }
 
-                m_app.SetOutlineThickness(thickness);
-                return 1; // Клик обработан
+                    m_app.SetOutlineThickness(thickness);
+                    return 1; // Клик обработан
+                }
+                // В других режимах игнорируем клик на кнопках толщины
+                return 0;
             }
         }
 

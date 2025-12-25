@@ -22,6 +22,8 @@ namespace geom
     Application::Application()
         : m_dragging(false)
         , m_commandHistoryIndex(0)
+        , m_totalDragX(0.0f)
+        , m_totalDragY(0.0f)
     {
     }
 
@@ -139,7 +141,7 @@ namespace geom
                 pos.y >= tbBounds.position.y &&
                 pos.y <= tbBounds.position.y + tbBounds.size.y)
             {
-                m_toolbar->HandleClick(pos); // Может изменить состояние через State Pattern
+                m_toolbar->HandleClick(pos);
                 toolbarClicked = true;
             }
         }
@@ -164,6 +166,42 @@ namespace geom
 
                 m_dragging = true;
                 m_lastMousePos = pos;
+                m_dragDropManager.StartDragging(pos);
+            }
+        }
+    }
+
+
+    void Application::HandleMouseMoved(const sf::Event::MouseMoved& event)
+    {
+        const sf::Vector2f pos(
+            static_cast<float>(event.position.x),
+            static_cast<float>(event.position.y)
+        );
+
+        if (m_currentState)
+        {
+            m_currentState->OnMouseMove(pos);
+        }
+
+        // Визуальное перетаскивание в реальном времени
+        if (m_dragging && !m_selected.empty())
+        {
+            // Вычисляем смещение мыши с последней позиции
+            const float dx = pos.x - m_lastMousePos.x;
+            const float dy = pos.y - m_lastMousePos.y;
+
+            // Если смещение достаточно велико
+            if (std::abs(dx) > 0.01f || std::abs(dy) > 0.01f)
+            {
+                // Используем DragDropManager для визуального перемещения
+                m_dragDropManager.UpdateDragging(pos, m_selected);
+
+                // Обновляем накопленное смещение для создания команды позже
+                m_totalDragX += dx;
+                m_totalDragY += dy;
+
+                m_lastMousePos = pos;
             }
         }
     }
@@ -180,47 +218,47 @@ namespace geom
             static_cast<float>(event.position.y)
         );
 
-        // Завершаем перетаскивание и создаем команду (Command Pattern)
-        if (m_dragging && !m_selected.empty() && !m_dragStartPositions.empty())
+        // Завершаем перетаскивание и создаем команду
+        if (m_dragging && !m_selected.empty())
         {
-            CreateMoveCommandForDragDrop(); // Создает MoveCommand
+            m_dragDropManager.StopDragging();
+
+            // Проверяем, было ли достаточно большое перемещение
+            if (std::abs(m_totalDragX) > Constants::MIN_DRAG_THRESHOLD ||
+                std::abs(m_totalDragY) > Constants::MIN_DRAG_THRESHOLD)
+            {
+                // Копируем выбранные фигуры для команды
+                std::vector<std::shared_ptr<IGeometry>> shapesToMove;
+                shapesToMove.reserve(m_selected.size());
+                for (const auto& shape : m_selected)
+                {
+                    shapesToMove.push_back(shape);
+                }
+
+                // СОЗДАЕМ КОМАНДУ ДЛЯ ОТМЕНЫ ПЕРЕМЕЩЕНИЯ
+                // Указываем смещение, на которое уже переместили фигуры
+                auto cmd = std::make_unique<MoveCommand>(
+                    std::move(shapesToMove),
+                    m_totalDragX,  // Смещение, которое уже выполнено
+                    m_totalDragY   // Смещение, которое уже выполнено
+                );
+
+                // ВАЖНО: команда уже "выполнена" (фигуры уже перемещены)
+                // Поэтому помечаем ее как выполненную
+                cmd->MarkAsExecuted(); // Нужно добавить этот метод в MoveCommand
+
+                ExecuteCommand(std::move(cmd));
+            }
+
+            m_dragging = false;
+            m_totalDragX = 0.0f;
+            m_totalDragY = 0.0f;
             m_dragStartPositions.clear();
         }
-
-        m_dragging = false;
 
         if (m_currentState)
         {
             m_currentState->OnMouseRelease(pos);
-        }
-    }
-
-    void Application::HandleMouseMoved(const sf::Event::MouseMoved& event)
-    {
-        const sf::Vector2f pos(
-            static_cast<float>(event.position.x),
-            static_cast<float>(event.position.y)
-        );
-
-        if (m_currentState)
-        {
-            m_currentState->OnMouseMove(pos);
-        }
-
-        // Обработка перетаскивания в реальном времени (визуальная обратная связь)
-        if (m_dragging && !m_selected.empty())
-        {
-            const float dx = pos.x - m_lastMousePos.x;
-            const float dy = pos.y - m_lastMousePos.y;
-
-            if (dx != 0.0f || dy != 0.0f)
-            {
-                for (auto& shape : m_selected)
-                {
-                    shape->MoveBy(dx, dy);
-                }
-                m_lastMousePos = pos;
-            }
         }
     }
 
@@ -279,47 +317,28 @@ namespace geom
 
     void Application::CreateMoveCommandForDragDrop()
     {
-        // Вычисляем общее перемещение для Command Pattern
-        float totalDx = 0.0f;
-        float totalDy = 0.0f;
-        int movedCount = 0;
+    //    // Используем накопленное перемещение для создания команды
+    //    // Не вычисляем заново, используем уже накопленные значения
+    //    if (std::abs(m_totalDragX) < Constants::MIN_DRAG_THRESHOLD &&
+    //        std::abs(m_totalDragY) < Constants::MIN_DRAG_THRESHOLD)
+    //        return;
 
-        for (size_t i = 0; i < m_selected.size(); ++i)
-        {
-            auto bounds = m_selected[i]->GetBounds();
-            float dx = bounds.position.x - m_dragStartPositions[i].x;
-            float dy = bounds.position.y - m_dragStartPositions[i].y;
+    //    // Копируем выбранные фигуры для команды
+    //    std::vector<std::shared_ptr<IGeometry>> shapesToMove;
+    //    shapesToMove.reserve(m_selected.size());
+    //    for (const auto& shape : m_selected)
+    //    {
+    //        shapesToMove.push_back(shape);
+    //    }
 
-            if (std::abs(dx) > Constants::MIN_DRAG_THRESHOLD ||
-                std::abs(dy) > Constants::MIN_DRAG_THRESHOLD)
-            {
-                totalDx += dx;
-                totalDy += dy;
-                movedCount++;
-            }
-        }
+    //    // Создаем и выполняем команду Command Pattern
+    //    auto cmd = std::make_unique<MoveCommand>(
+    //        std::move(shapesToMove),
+    //        m_totalDragX,
+    //        m_totalDragY
+    //    );
 
-        if (movedCount > 0)
-        {
-            float avgDx = totalDx / movedCount;
-            float avgDy = totalDy / movedCount;
-
-            std::vector<std::shared_ptr<IGeometry>> shapesToMove;
-            shapesToMove.reserve(m_selected.size());
-            for (const auto& shape : m_selected)
-            {
-                shapesToMove.push_back(shape);
-            }
-
-            // Создаем и выполняем команду Command Pattern
-            auto cmd = std::make_unique<MoveCommand>(
-                std::move(shapesToMove),
-                avgDx,
-                avgDy
-            );
-
-            ExecuteCommand(std::move(cmd));
-        }
+    //    ExecuteCommand(std::move(cmd));
     }
 
     void Application::Render()
